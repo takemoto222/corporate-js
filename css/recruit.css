@@ -1,0 +1,55 @@
+.recruit-wrap {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.recruit-new-graduate recruit-type {
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th,
+td {
+  border: solid 1px; /* 枠線指定 */
+  padding: 10px; /* 余白指定 */
+}
+
+table {
+  border-collapse: collapse; /* セルの線を重ねる */
+}
+
+.recruit-type-info {
+  width: 100%;
+  border: 1px solid #222;
+  margin-top: 20px;
+}
+
+.recruit-type-ttl {
+  font-size: 26px;
+  border-bottom: 1px solid #000;
+  margin-top: 80px;
+}
+
+.recruit-type-description {
+  font-size: 20px;
+}
+
+.recruit-type-info-name {
+  font-size: 20px;
+  font-weight: bold;
+  background: #f3f0f0;
+  border: 1px solid #000;
+}
+
+.recruit-type-info-data {
+  font-size: 20px;
+  border: 1px solid #000;
+}
+
+.ecruit-mid-career recruit-type {
+  margin-top: 80px; /*本当はここでmargin-topを使いたいが、反応無し*/
+}

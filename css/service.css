@@ -1,0 +1,37 @@
+.page-mv {
+  background: url(../img/mv.png) center / cover;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service-list {
+  color: #000;
+}
+
+.service-item {
+  display: flex;
+  border-top: 1px solid #000;
+  justify-content: space-between;
+}
+
+.service-item-img {
+  width: 290px;
+  padding: 20px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.service-item-detile {
+  padding: 10px 20px;
+}

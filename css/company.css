@@ -1,0 +1,32 @@
+.company {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.company-info {
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+
+.info-top {
+  border-top: 1px solid #222;
+}
+
+table {
+  border-bottom: 1px solid #222;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+}
+
+.company-info-name {
+  border-bottom: 1px solid #222;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.company-info-data {
+  border-bottom: 1px solid #222;
+  font-size: 20px;
+  padding: 20px 10px;
+}
