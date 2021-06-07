@@ -424,11 +424,13 @@ a {
   color: #fff;
 }
 
-.nav-ham {
+/*これを消すとレスポンシブのドロワーメニューが表示される、けどpcのヘッダーメニューのレイアウトが
+崩れる、なぜ、レスポンシブの外で display: none;を使ってるのにレスポンシブに影響が出てるかわからない*/
+.nav {
   display: none;
 }
 
-.nav-menu {
+.menu {
   display: none;
 }
 /**/
@@ -469,12 +471,13 @@ a {
 
 /*レスポンシブ*/
 
+/*ハンガーメニューが回転しなくなって理由がわからない*/
 @media screen and (max-width: 768px) {
   a {
     text-decoration: none;
     color: blue;
   }
-  .nav-ham {
+  .nav {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -483,14 +486,14 @@ a {
     transition: 0.7s;
     text-align: center;
   }
-  .nav-ham ul {
+  .nav ul {
     padding-top: 80px;
   }
-  .nav-ham ul li {
+  .nav ul li {
     list-style-type: none;
     margin-top: 50px;
   }
-  .menu-ham {
+  .menu {
     display: inline-block;
     width: 36px;
     height: 32px;
@@ -881,9 +884,10 @@ a {
   a {
     color: #fff;
   }
+
+  .main-header-all {
+    display: none;
+  }
 }
 
-.main-header-all {
-  display: none;
-}
 /*レスポンシブ*/
