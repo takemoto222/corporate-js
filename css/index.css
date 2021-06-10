@@ -478,6 +478,7 @@ a {
     color: blue;
   }
   .nav {
+    display: block;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -521,14 +522,14 @@ a {
   .menu__line--bottom {
     bottom: 0;
   }
-  .menu-ham.open span:nth-of-type(1) {
+  .menu.open span:nth-of-type(1) {
     top: 14px;
     transform: rotate(45deg);
   }
-  .menu-ham.open span:nth-of-type(2) {
+  .menu.open span:nth-of-type(2) {
     opacity: 0;
   }
-  .menu-ham.open span:nth-of-type(3) {
+  .menu.open span:nth-of-type(3) {
     top: 14px;
     transform: rotate(-45deg);
   }
@@ -574,7 +575,7 @@ a {
 
   .feature-inline {
     background: #000;
-    width: 1080px;
+    width: 768px;
     margin: 0 auto;
   }
 
@@ -649,7 +650,7 @@ a {
   /*service end*/
   /*ニュース*/
   .news-inner {
-    width: 1080px;
+    width: 768px;
     margin: 0 auto;
   }
   .top-news {
@@ -701,7 +702,7 @@ a {
   /*news end*/
   /*blog start*/
   .top-blog {
-    width: 1080px;
+    width: 768px;
     margin: 0 auto;
   }
 
