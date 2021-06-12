@@ -347,11 +347,12 @@ a {
 
 .bottom-contact {
   background-color: #f5f6f9;
-  width: 100%;
+  width: 1080px;
 }
 
 .inner-contact {
   text-align: center;
+  width: 100%;
 }
 
 .contact-ttl {
@@ -404,11 +405,9 @@ a {
 /*ボタンここまで*/
 
 .footer {
-  padding: 20px 0;
   color: #fff;
   background-color: #222;
-  font-size: 100%;
-  width: 100%;
+  width: 1080px;
   padding: 0 20px;
 }
 
@@ -418,6 +417,7 @@ a {
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  width: 100%;
 }
 
 .footer-nav {
@@ -637,9 +637,8 @@ a {
   /*サービスアイテム１つの全体のブロック*/
   .top-service-list {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
   }
+
   /*サービスアイテム１つの全体のブロック*/
 
   /*サービスアイテムのブロック*/
@@ -650,9 +649,6 @@ a {
     padding: 0px 30px;
   }
 
-  .top-service-item-last {
-    transform: translate(0px, 25px);
-  }
   /*サービスアイテムのブロック*/
 
   /*サービスアイテムの画像*/
@@ -665,12 +661,10 @@ a {
   /*サービスアイテムの説明*/
   .top-service-item-h3 {
     color: #000;
-    margin-top: 20px;
   }
 
   .top-service-item-p {
     color: #000;
-    margin-top: 40px;
   }
   /*サービスアイテムの1ブロックラスト*/
 
@@ -908,7 +902,7 @@ a {
   }
   /*ボタンここまで*/
 
-  footer {
+  .footer {
     width: 768px;
     padding: 20px 0;
     color: #fff;
@@ -918,10 +912,8 @@ a {
   }
 
   .footer-inner {
-    width: 768px;
+    width: 100%;
     display: flex;
-
-    justify-content: space-between;
     align-items: center;
     font-size: 5px;
   }
