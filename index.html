@@ -13,16 +13,22 @@
 
   <!--ハンバーガーメニュー  レスポンシブ　　メインでnavとmenuにdisplay:none;-->
 <nav class="nav" id="nav">
+
   <ul>
-    <li><a href="#">リンク1</a></li>
-    <li><a href="#">リンク2</a></li>
-    <li><a href="#">リンク3</a></li>
+    <li><a href="index.thml">ホーム</a></li>
+    <li><a href="service.thml">事業案内</a></li>
+    <li><a href="news.thml">ニュース</a></li>
+    <li><a href="blog.thml">社員ブログ</a></li>
+    <li><a href="recruit.tnml">採用情報</a></li>
+    <li><a href="contact.thml">お問い合わせ</a></li>
   </ul>
 </nav>
+
 <div class="menu" id="menu">
   <span class="menu__line--top"></span>
   <span class="menu__line--middle"></span>
   <span class="menu__line--bottom"></span>
+  <span class="menu__line--bottom-ttl">MENU</span>
 </div>
 
     <!--ハンバーガーメニュー終わり-->
@@ -103,12 +109,12 @@
         <p class="top-service-item-p">これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。</p>
       </section>
 
-      <section class="top-service-item">
+      <section class="top-service-item-last">
         <div class="top-service-item-img">
           <img src="img/service4.png" alt="4">
         </div>
         <h3 class="top-service-item-h3">デジタルトランスフォーメーション事業</h3>
-        <p class="top-service-item-p">人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。</p>
+        <p class="top-service-item-p">人ションやサービスを生み出します。</p>
       </section>
 
     </div>
@@ -148,9 +154,12 @@
 <!--news end-->
 <!--blog start-->
   <section class="top-blog wrap ptb-m">
-    <div class="blog-inner">
-      <h3 class="blog-ttl">社員ブログ</h3>
 
+      <h3 class="blog-ttl">社員ブログ</h3>
+      <!--jsとリンク  横スクロール-->
+    <div id="target" class="blog-inner">
+            <!--jsとリンク-->
+<!--１段目-->
       <div class="blog-list">
         <article class="blog-list-item">
           <a href="blog-item-link">
@@ -176,6 +185,34 @@
           <h3 class="blog-item-h3">コーチングによるモチベーション向上理論</h3>
         </article>
       </div>
+<!--１段目-->
+<!--２段目-->
+          <div class="blog-list">
+            <article class="blog-list-item">
+              <a href="blog-item-link">
+                <img class="blog-img" src="img/blog.png" alt="blog">
+              </a>
+              <p class="blog-item-p">2021/03/27</p>
+              <h3 class="blog-item-h3">運動不足対策として社内にジム設置</h3>
+            </article>
+          
+            <article class="blog-list-item">
+              <a href="blog-item-link">
+                <img class="blog-img" src="img/blog.png" alt="blog">
+              </a>
+              <p class="blog-item-p">2021/04/01</p>
+              <h3 class="blog-item-h3">エイプリルフール</h3>
+            </article>
+          
+            <article class="blog-list-item">
+              <a href="blog-item-link">
+                <img class="blog-img" src="img/blog.png" alt="blog">
+              </a>
+              <p class="blog-item-p">2021/06/08</p>
+              <h3 class="blog-item-h3">田中くんの誕生日</h3>
+            </article>
+          </div>
+<!--２段目-->
     </div>
 
     <div class="service-link-parent">
@@ -200,8 +237,7 @@
 </main>
 
 
-
-<!--コンタクト-->
+<!--コンタクト　お問い合わせ-->
 <section class="bottom-contact ptb-m">
   <div class="inner-contact">
     <h3 class="contact-ttl">お問い合わせ</h3>
@@ -242,9 +278,7 @@
 
 
 <!--レスポンシブ-->
-<div class="sp">
-  スマホで表示する内容をここに記述
-</div>
+
 
 
 <!--レスポンシブ-->

@@ -21,10 +21,6 @@ body {
   margin: 0 auto; /*中央寄せ*/
 }
 
-/*レスポンシブ*/
-
-/*レスポンシブ*/
-
 .ptb-m {
   padding: 80px 0;
 }
@@ -132,8 +128,11 @@ header {
 
 /*service start*/
 
+/*サービス全体*/
 .top-service {
+  width: 1080px;
 }
+/*サービス全体*/
 
 .top-service-ttl {
   color: #000;
@@ -142,17 +141,15 @@ header {
   font-weight: bold;
 }
 
+/*サービス項目全体の枠組み*/
 .top-service-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+/*サービス項目全体の枠組み*/
 
-img {
-  width: 529px;
-  height: 318px;
-}
-
+/*サービス各項目*/
 .top-service-item {
   width: 49%;
   margin-top: 20px;
@@ -160,6 +157,15 @@ img {
   padding: 0px 30px;
 }
 
+/*サービス画像*/
+
+img {
+  width: 529px;
+  height: 318px;
+}
+/*サービス画像*/
+
+/*サービス説明*/
 .top-service-item-h3 {
   color: #000;
 }
@@ -167,6 +173,11 @@ img {
 .top-service-item-p {
   color: #000;
 }
+/*サービス説明*/
+/*サービス　わからない部分*/
+/*画像４枚目だけずれる原因がわからない、classを４つとも同じにしてるという理由で
+４つ目だけずれる結果が理解できずにいます*/
+/*サービス各項目ここまで*/
 
 .service-link-parent {
   margin-top: 30px;
@@ -231,6 +242,7 @@ dl {
 
 dt {
   font-size: 15px;
+  padding: 0px 20px;
 }
 
 dd {
@@ -335,6 +347,7 @@ a {
 
 .bottom-contact {
   background-color: #f5f6f9;
+  width: 100%;
 }
 
 .inner-contact {
@@ -395,6 +408,8 @@ a {
   color: #fff;
   background-color: #222;
   font-size: 100%;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .footer-inner {
@@ -417,15 +432,14 @@ a {
   text-decoration: none;
   list-style: none;
   color: #fff;
-  padding: 0 20px;
+  padding: 5px 20px;
+  margin-right: 20px;
 }
 
 a {
   color: #fff;
 }
 
-/*これを消すとレスポンシブのドロワーメニューが表示される、けどpcのヘッダーメニューのレイアウトが
-崩れる、なぜ、レスポンシブの外で display: none;を使ってるのにレスポンシブに影響が出てるかわからない*/
 .nav {
   display: none;
 }
@@ -471,7 +485,6 @@ a {
 
 /*レスポンシブ*/
 
-/*ハンガーメニューが回転しなくなって理由がわからない*/
 @media screen and (max-width: 768px) {
   a {
     text-decoration: none;
@@ -483,7 +496,7 @@ a {
     height: 100vh;
     width: 100%;
     left: -100%;
-    background: #eee;
+    background: #c9c3c3;
     transition: 0.7s;
     text-align: center;
   }
@@ -493,6 +506,8 @@ a {
   .nav ul li {
     list-style-type: none;
     margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
   }
   .menu {
     display: inline-block;
@@ -513,15 +528,26 @@ a {
     position: absolute;
     transition: 0.5s;
   }
+
   .menu__line--top {
     top: 0;
   }
   .menu__line--middle {
-    top: 14px;
+    top: 10px;
   }
+
   .menu__line--bottom {
+    top: 20px;
+  }
+  .menu__line--bottom-ttl {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
     bottom: 0;
   }
+
   .menu.open span:nth-of-type(1) {
     top: 14px;
     transform: rotate(45deg);
@@ -541,6 +567,7 @@ a {
   /*ヘッダーここまで*/
 
   .top-mv {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,8 +621,11 @@ a {
 
   /*service start*/
 
+  /*このページの全体*/
   .top-service {
+    width: 768px;
   }
+  /*このページの全体*/
 
   .top-service-ttl {
     color: #000;
@@ -604,31 +634,45 @@ a {
     font-weight: bold;
   }
 
+  /*サービスアイテム１つの全体のブロック*/
   .top-service-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
+  /*サービスアイテム１つの全体のブロック*/
 
-  img {
-    width: 529px;
-    height: 318px;
-  }
-
-  .top-service-item {
-    width: 49%;
-    margin-top: 20px;
-    margin-left: 10px;
+  /*サービスアイテムのブロック*/
+  .top-service-item,
+  .top-service-item-last {
+    width: 40%;
+    margin: 50px 30px;
     padding: 0px 30px;
   }
 
+  .top-service-item-last {
+    transform: translate(0px, 25px);
+  }
+  /*サービスアイテムのブロック*/
+
+  /*サービスアイテムの画像*/
+  img {
+    width: 310px;
+    height: 170px;
+  }
+  /*サービスアイテムの画像*/
+
+  /*サービスアイテムの説明*/
   .top-service-item-h3 {
     color: #000;
+    margin-top: 20px;
   }
 
   .top-service-item-p {
     color: #000;
+    margin-top: 40px;
   }
+  /*サービスアイテムの1ブロックラスト*/
 
   .service-link-parent {
     margin-top: 30px;
@@ -652,6 +696,7 @@ a {
   .news-inner {
     width: 768px;
     margin: 0 auto;
+    padding: 0px 10px;
   }
   .top-news {
     background: #000;
@@ -693,6 +738,7 @@ a {
 
   dt {
     font-size: 15px;
+    padding: 0px 20px;
   }
 
   dd {
@@ -707,6 +753,8 @@ a {
   }
 
   .blog-inner {
+    width: 768px;
+    display: flex;
   }
 
   .blog-ttl {
@@ -717,16 +765,22 @@ a {
   }
 
   .blog-list {
-    display: flex;
+    justify-content: center;
   }
 
   .blog-list-item {
     margin-right: 20px;
   }
   .blog-img {
-    width: 345px;
-    height: 207px;
+    width: 300px;
+    height: 170px;
   }
+
+  /*jsとリンク*/
+  #target {
+    overflow: scroll;
+  }
+  /*jsとリンク*/
 
   .blog-item-link {
     text-decoration: none;
@@ -793,10 +847,12 @@ a {
   }
 
   /*company end*/
+
   /*contact start*/
 
   .bottom-contact {
     background-color: #f5f6f9;
+    width: 768px;
   }
 
   .inner-contact {
@@ -852,19 +908,22 @@ a {
   }
   /*ボタンここまで*/
 
-  .footer {
+  footer {
+    width: 768px;
     padding: 20px 0;
     color: #fff;
     background-color: #222;
     font-size: 100%;
+    display: flex;
   }
 
   .footer-inner {
+    width: 768px;
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 5px;
   }
 
   .footer-nav {

@@ -8,11 +8,32 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/service.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
+  <!--ハンバーガーメニュー  レスポンシブ　　メインでnavとmenuにdisplay:none;-->
+  <nav class="nav" id="nav">
 
-<header>
+    <ul>
+      <li><a href="index.thml">ホーム</a></li>
+      <li><a href="service.thml">事業案内</a></li>
+      <li><a href="news.thml">ニュース</a></li>
+      <li><a href="blog.thml">社員ブログ</a></li>
+      <li><a href="recruit.tnml">採用情報</a></li>
+      <li><a href="contact.thml">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu" id="menu">
+    <span class="menu__line--top"></span>
+    <span class="menu__line--middle"></span>
+    <span class="menu__line--bottom"></span>
+    <span class="menu__line--bottom-ttl">MENU</span>
+  </div>
+
+  <!--ハンバーガーメニュー終わり-->
+<header class="main-header-all">
   <h1 class="header-ttl"><a href="index.html" class="header-link">TECH</a></h1>
 
   <nav class="header-nav">
@@ -27,6 +48,9 @@
   </nav>
 
 </header>
+
+
+
 
 <div class="page-mv">
   <h1 class="ttl">事業内容</h1>
@@ -57,7 +81,7 @@
 
         <section class="service-item">
           <div class="service-item-img">
-            <img src="img/service2.png">
+            <img src="img/service3.png">
           </div>
           <div class="service-item-detile">
             <h2 class="service-item-ttl">ITコンサル事業</h2>
@@ -91,7 +115,7 @@
     <a href="#" class="contact-link">お問い合わせ</a>
   </div>
 </section>
-
+<script type="text/javascript" src="js/main.js"></script>
 <footer class="footer">
   <div class="footer-inner wrap">
     <small class="footer-copyright">© 2020 TECH inc.</small>
@@ -108,4 +132,4 @@
     </nav>
   </div>
 </footer>
-  </body>
+</body>
