@@ -145,7 +145,7 @@ header {
 .top-service-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 /*サービス項目全体の枠組み*/
 

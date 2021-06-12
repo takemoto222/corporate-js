@@ -19,6 +19,7 @@
 .service-page-list {
   color: #000;
   width: 100%;
+  align-items: flex-start;
 }
 
 .service-item {
@@ -151,6 +152,7 @@ img {
   .service-page-list {
     color: #000;
     width: 100%;
+    align-items: flex-start;
   }
 
   .service-item {
